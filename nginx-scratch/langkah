@@ -1,0 +1,18 @@
+wget https://nginx.org/download/nginx-1.19.2.tar.gz && tar xzvf nginx-1.19.2.tar.gz
+wget https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz && tar xzvf pcre-8.44.tar.gz
+wget https://www.zlib.net/zlib-1.2.11.tar.gz && tar xzvf zlib-1.2.11.tar.gz
+wget https://www.openssl.org/source/openssl-1.1.1h.tar.gz && tar xzvf openssl-1.1.1h.tar.gz
+git clone https://github.com/aperezdc/ngx-fancyindex.git ngx-fancyindex 
+
+dnf install perl perl-devel perl-ExtUtils-Embed libxslt libxslt-devel libxml2 libxml2-devel gd gd-devel GeoIP GeoIP-devel
+
+./configure
+make
+make install
+
+ln -s /usr/lib64/nginx/modules /etc/nginx/modules
+useradd --system --home /var/cache/nginx --shell /sbin/nologin --comment "nginx user" --user-group nginx
+mkdir -p /var/cache/nginx
+
+nging -t
+systemctl start nginx.service && systemctl enable nginx.service && systemctl start nginx.service

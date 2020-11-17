@@ -1,0 +1,9 @@
+# malicious
+https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
+# malwaredomains
+https://mirror1.malwaredomains.com/files/justdomains
+# dewe
+https://raw.githubusercontent.com/piclemaniscool/PiholeBlocklist/master/piholeblocklist.txt
+https://raw.githubusercontent.com/fapson/DNSBL-YTAds/master/YTADSblocking.txt
+https://raw.githubusercontent.com/x64David/pihole-blocklist-youtube/master/youtube-list.txt
+http://192.168.100.20/adslist/xxx.txt

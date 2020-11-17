@@ -1,0 +1,4 @@
+proxy-dns: true
+proxy-dns-port: 5053
+proxy-dns-upstream:
+  - https://doh-sg.blahdns.com/uncensor
