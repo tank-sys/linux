@@ -1,8 +1,0 @@
-#!/bin/bash
-#taruh di /usr/sbin
-if [ "$1" != "" ]; then
-/mnt/c/Windows/System32/notepad.exe $1
-exit
-else
-    echo "Filenya mana yang mau diedit?"
-fi
