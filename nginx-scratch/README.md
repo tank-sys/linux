@@ -2,7 +2,8 @@
 <ol>
 <li>apt install -y build-essential git tree software-properties-common dirmngr apt-transport-https<br>
   yum groupinstall 'Development Tools'
-</li><li>apt install -y perl libperl-dev libgd3 libgd-dev libgeoip1 libgeoip-dev geoip-bin libxml2 libxml2-dev libxslt1.1 libxslt1-dev
+</li><li>apt install -y perl libperl-dev libgd3 libgd-dev libgeoip1 libgeoip-dev geoip-bin libxml2 libxml2-dev libxslt1.1 libxslt1-dev<br>
+  yum install libxml2-devel libxslt-devel gd-devel
 </li><li>Download source nginx terbal file
 </li><li>Download modules
 <ul>
