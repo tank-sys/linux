@@ -23,7 +23,9 @@ git clone https://github.com/aperezdc/ngx-fancyindex.git ngx-fancyindex
 </ul>
   
 </li><li>ln -s /usr/lib/nginx/modules /etc/nginx/modules
-</li><li>adduser --system --home /nonexistent --shell /bin/false --no-create-home --disabled-login --disabled-password --gecos "nginx user" --group nginx
+</li><li>adduser --system --home /nonexistent --shell /bin/false --no-create-home --disabled-login --disabled-password --gecos "nginx user" --group nginx<br>
+  useradd --system --home /var/cache/nginx --shell /sbin/nologin --comment "nginx user" --user-group nginx
+</li><li>mkdir -p /var/cache/nginx
 </li><li>nano /etc/systemd/system/nginx.service<br><pre>
   [Unit]
 Description=nginx - high performance web server
