@@ -1,9 +1,10 @@
 # Installing nginx from scratch
 <ol>
 <li>apt install -y build-essential git tree software-properties-common dirmngr apt-transport-https<br>
-  yum groupinstall 'Development Tools'
+  yum groupinstall 'Development Tools'<br>
+  dnf install epel-release
 </li><li>apt install -y perl libperl-dev libgd3 libgd-dev libgeoip1 libgeoip-dev geoip-bin libxml2 libxml2-dev libxslt1.1 libxslt1-dev<br>
-  yum install libxml2-devel libxslt-devel gd-devel
+  dnf install perl perl-devel perl-ExtUtils-Embed libxslt libxslt-devel libxml2 libxml2-devel gd gd-devel GeoIP GeoIP-devel
 </li><li>Download source nginx terbal file
 </li><li>Download modules
 <ul>
